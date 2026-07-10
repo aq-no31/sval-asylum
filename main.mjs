@@ -51,13 +51,7 @@ client.on('messageCreate', (message) => {
      if (message.content.includes('みてみて')) {
         message.react("👍");
      }
- // 直接リプライ test
 
-     if  (message.isMemberMentioned(client.user) && message.content.include('おみくじして！')){
-         let arr2 = ["今日はいい日になるんじゃないか", "スーパーで好きなものが特売になりそうだな", "慶殿が蕎麦屋を紹介してくれるかもしれないな", "道を歩いたら小銭が落ちているかもしれないな", "昨日うまくいかなかったことができるようになるかもしれないな", "植物の力強さを感じられる1日になりそうだな"];
-         let arra2 = arr2[Math.floor(Math.random() * arr2.length)];
-        message.reply(arra2);
-     }
 
 });
 
